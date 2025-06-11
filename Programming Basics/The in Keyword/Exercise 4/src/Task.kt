@@ -4,7 +4,8 @@ package theInKeywordExercise4
 // isValidCharacter
 
 fun isValidIdentifier(s: String): Boolean {
-  TODO()
+  return !s.isEmpty() && (s[0].isLetter() || s[0] == '_')
+          && s.all { it.isLetterOrDigit() || it == '_' }
 }
 
 fun main() {

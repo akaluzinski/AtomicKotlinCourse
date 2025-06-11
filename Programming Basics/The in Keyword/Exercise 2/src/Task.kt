@@ -2,7 +2,7 @@
 package theInKeywordExercise2
 
 fun sumOfEven(n: Int): Int {
-  TODO()
+  return (0..n step 2).sum()
 }
 
 fun main() {

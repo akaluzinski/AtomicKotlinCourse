@@ -2,7 +2,7 @@
 package theInKeywordExercise1
 
 fun getAlphabet(): String {
-  TODO()
+  return ('a'..'z').joinToString("")
 }
 
 fun main() {
