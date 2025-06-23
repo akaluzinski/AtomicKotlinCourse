@@ -2,7 +2,11 @@
 package ifExpressionsExercise1
 
 fun checkSign(number: Int): String =
-  TODO()
+    when {
+        number < 0 -> "negative"
+        number > 0 -> "positive"
+        else -> "zero"
+    }
 
 fun main() {
   println(checkSign(-19))  // negative
