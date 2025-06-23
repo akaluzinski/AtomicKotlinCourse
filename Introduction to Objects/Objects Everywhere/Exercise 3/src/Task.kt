@@ -8,7 +8,7 @@ fun isPalIgnoreCase(s: String): Boolean =
   isPalindrome(s.lowercase())
 
 fun isPalIgnoreSpecial(s: String): Boolean {
-  TODO()
+  return isPalIgnoreCase(s.filter { it.isLetterOrDigit() })
 }
 
 fun main() {
